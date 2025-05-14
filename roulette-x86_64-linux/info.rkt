@@ -7,7 +7,7 @@
 (define pkg-desc "native libraries for \"roulette\" on \"x86_64-linux\"")
 (define pkg-authors '(camoy))
 
-(define install-platform "x86_64-linux")
+(define install-platform #rx"^x86_64-linux(?:-natipkg)?$")
 (define copy-foreign-libs '("librsdd.so"))
 
 (define license 'MIT)
